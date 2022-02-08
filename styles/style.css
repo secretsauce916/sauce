@@ -10,7 +10,6 @@ body {
     max-height: 666px;
     min-height: 100vh;
     background-color: rgba(0,0,0,.3);
-    overflow-y: hidden;
 
 }
 .cover::before {
@@ -18,14 +17,16 @@ body {
     background: url('../images/slowmo.gif');
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 666px;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 666px;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
+    object-fit: cover;
     z-index: -11111; 
+    overflow-y: hidden;
 }
 .cover-content {
     z-index: -1;
@@ -38,6 +39,8 @@ body {
     border-bottom: 2px solid black;
     height: 3em;
     padding-top: 5px;
+    bottom: 0;
+    position: absolute;
     overflow-x: hidden;
     overflow-y: hidden;
 
