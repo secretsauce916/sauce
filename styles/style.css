@@ -47,6 +47,7 @@ body {
 }
 .track {
     position: absolute;
+    bottom: 0;
     white-space: nowrap;
     will-change: transform;
     animation: marquee 32s linear infinite;
@@ -125,12 +126,12 @@ text-decoration: none;
       opacity: 0.7;
   }
   #signup {
-      background-color: #EDDBFF;
       padding: 1.5em;
 
   }
   #signup .container-fluid {
     margin-top: 50px;
+    color: #CCCCCC;
   }
 
   h1 {
