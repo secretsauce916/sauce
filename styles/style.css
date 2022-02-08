@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://use.typekit.net/hki1fog.css");
+
+body {
+    max-width: 100vw;
+    overflow-x: clip;
+    background-color: #EDDBFF;
+}
+.cover {
+    max-height: 666px;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.3);
+    overflow-y: hidden;
+
+}
+.cover::before {
+    content:"";
+    background: url('../images/slowmo.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 666px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -11111; 
+}
+.cover-content {
+    z-index: -1;
+}
+
+.marquee-box {
+    width: 100vw;
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 3em;
+    padding-top: 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .track h2{
+text-transform: uppercase;
+font-family: 'VT323', monospace;
+font-size: 2em;
+
+
+  }
+
+  .container-upper {
+      border: 1px solid #EDDBFF;
+      border-radius: 5px;
+      padding: 10px;
+    color: #EDDBFF;
+      margin-top: 1em;
+      /* margin-left: 1em; */
+      box-shadow: 5px 5px #EDDBFF;
+      font-family: 'VT323', monospace;
+      max-width: 350px;
+      text-align: justify;
+  }
+
+  .container-upper h2 {
+    font-size: 1.5em;
+  }
+
+  .n-link {
+    margin-top: 2em;
+        margin-bottom: 1em;
+  }
+  .n-link a.text-link{
+    border: 1px solid #EDDBFF;
+    border-radius: 100%;
+    margin-top: 1em;
+
+  color: #EDDBFF;
+    font-family: 'Eurostile Extd', monospace;
+    font-size: 1.5em;
+    padding: 1rem;
+    width: 150px;
+  color: #EDDBFF;
+  text-decoration: none;
+  align-items: center;
+
+  }
+  .n-link a i{
+      color: #EDDBFF;
+      font-size: 2.5em;
+      padding: .25em;
+  }
+
+  .n-link a i:hover{
+    opacity: 0.7;
+}
+
+  .n-link a:hover {
+
+      text-decoration: underline;
+  }
+  #signup {
+      background-color: #EDDBFF;
+      padding: 1.5em;
+
+  }
+  #signup .container-fluid {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-family: 'Eurostile Extd', sans-serif;
+    font-weight: 900;
+    font-size: 3.5em;
+    line-height: .9;
+    text-align: left;
+  }
+
+  h2 {
+    font-family: 'VT323', monospace;
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+
+  h3 {
+    font-family: 'Eurostile Extd', sans-serif;
+    font-size: 1em;
+  }
+
+  p {
+    font-family: 'Eurostile', sans-serif;
+  }
